@@ -1,68 +1,80 @@
 // $grid-gutter-widths: (
-// sm:40px,
+// sm: 40px,
 // xxl: 80px
 // );
 
 // .container {
     //     @each $grid-breakpoints in $grid-gutter-width {
-        //         @include media-breakpoint-up($grid-breakpoints) {
+        //         @include media-breakpoint-up( $grid-breakpoints) {
             //             @include make-container($grid-gutter-width);
             //         } 
             //     }    
             // }
             
             
-            
-            // .row > .col,
-            // .row > [class*= 'col-'] {
+            // .row {
                 //     @each $grid-breakpoints in $grid-gutter-width {
-                    //         @include media-breakpoint-up($grid-breakpoints) {
-                        //             @include make-container($grid-gutter-width);
+                    //         @include media-breakpoint-up( $grid-breakpoints) {
+                        //             @include make-row($grid-gutter-width);
                         //         } 
-                        //     } 
+                        //     }
                         // }
                         
                         
                         
-                        .container,
-                        .container-fluid {
-                            padding: 0 2rem;
-                            
-                            @include media-breakpoint-up(xxl){
-                                padding: 0 4rem;
-                            }
-                            
-                            .row {
-                                margin-left: -2rem;
-                                margin-right: -2rem;
-                                
-                                @include media-breakpoint-up(xxl){
-                                    margin-left: -4rem;
-                                    margin-right: -4rem;
-                                }
-                            }
-                            
-                            .col, [class*="col-"] {
-                                padding: 0 2rem;
-                                
-                                @include media-breakpoint-up(xxl){
-                                    padding: 0 4rem; 
-                                }
-                            }
-                        }
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+                        // .row > .col,
+                        // .row > [class*= 'col-'] {
+                            //     @each  $grid-breakpoints in $grid-gutter-width {
+                                //         @include media-breakpoint-up( $grid-breakpoints) {
+                                    //             @include make-col-ready($grid-gutter-width);
+                                    //         } 
+                                    //     } 
+                                    // }
+                                    
+                                    // $grid-gutter-width:map-get($grid-gutter-widths,sm);
+                                    // $grid-gutter-width:map-get($grid-gutter-widths,xxl);
+                                    
+                                    
+                                    
+                                    .container,
+                                    .container-fluid {
+                                        padding: 0 2rem;
+                                        
+                                        @include media-breakpoint-up(xxl){
+                                            padding: 0 4rem;
+                                        }
+                                        
+                                        .row {
+                                            margin-left: -2rem;
+                                            margin-right: -2rem;
+                                            
+                                            @include media-breakpoint-up(xxl){
+                                                margin-left: -4rem;
+                                                margin-right: -4rem;
+                                            }
+                                        }
+                                        
+                                        .col, [class*="col-"] {
+                                            padding: 0 2rem;
+                                            
+                                            @include media-breakpoint-up(xxl){
+                                                padding: 0 4rem; 
+                                            }
+                                        }
+                                    }
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
