@@ -1,80 +1,109 @@
-// $grid-gutter-widths: (
-// sm: 40px,
-// xxl: 80px
-// );
+/*
+$grid-gutter-widths: (
+sm: 1rem,
+md: 1.5rem,
+lg: 2rem,
+xl: 2.5rem,
+xxl: 3rem,
+);
 
-// .container {
-    //     @each $grid-breakpoints in $grid-gutter-width {
-        //         @include media-breakpoint-up( $grid-breakpoints) {
-            //             @include make-container($grid-gutter-width);
-            //         } 
-            //     }    
-            // }
+@each $grid-breakpoints, $gutter-width in $grid-gutter-widths {
+    $container-padding-x: $gutter-width*.5;
+    $grid-gutter-width: $gutter-width;
+    @include media-breakpoint-up($grid-breakpoints, $name) {
+        .container,
+        .container-fluid {
+            @include make-container();
+        }
+        
+        .row {
+            @include make-row();
             
-            
-            // .row {
-                //     @each $grid-breakpoints in $grid-gutter-width {
-                    //         @include media-breakpoint-up( $grid-breakpoints) {
-                        //             @include make-row($grid-gutter-width);
-                        //         } 
-                        //     }
-                        // }
-                        
-                        
-                        
-                        // .row > .col,
-                        // .row > [class*= 'col-'] {
-                            //     @each  $grid-breakpoints in $grid-gutter-width {
-                                //         @include media-breakpoint-up( $grid-breakpoints) {
-                                    //             @include make-col-ready($grid-gutter-width);
-                                    //         } 
-                                    //     } 
-                                    // }
-                                    
-                                    // $grid-gutter-width:map-get($grid-gutter-widths,sm);
-                                    // $grid-gutter-width:map-get($grid-gutter-widths,xxl);
-                                    
-                                    
-                                    
-                                    .container,
-                                    .container-fluid {
-                                        padding: 0 2rem;
-                                        
-                                        @include media-breakpoint-up(xxl){
-                                            padding: 0 4rem;
-                                        }
-                                        
-                                        .row {
-                                            margin-left: -2rem;
-                                            margin-right: -2rem;
-                                            
-                                            @include media-breakpoint-up(xxl){
-                                                margin-left: -4rem;
-                                                margin-right: -4rem;
-                                            }
-                                        }
-                                        
-                                        .col, [class*="col-"] {
-                                            padding: 0 2rem;
-                                            
-                                            @include media-breakpoint-up(xxl){
-                                                padding: 0 4rem; 
-                                            }
-                                        }
-                                    }
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
+            > * {
+                @include make-col-ready();
+            }
+        }
+        @include make-grid-columns();
+        
+    }
+}
+
+$grid-gutter-width: (
+xs: 40px,
+xl: 80px
+);
+
+.container {
+    @each $grid-breakpoints in $grid-gutter-width {
+        @include media-breakpoint-up( $grid-breakpoints) {
+            @include make-container($grid-gutter-width);
+        } 
+    }    
+}
+
+
+.row {
+    @each $grid-breakpoints in $grid-gutter-width {
+        @include media-breakpoint-up( $grid-breakpoints) {
+            @include make-row($grid-gutter-width);
+        } 
+    }
+}
+
+
+
+.row > .col,
+.row > [class*= 'col-'] {
+    @each  $grid-breakpoints in $grid-gutter-width {
+        @include media-breakpoint-up( $grid-breakpoints) {
+            @include make-col-ready($grid-gutter-width);
+        } 
+    } 
+}
+
+$grid-gutter-width:map-get($grid-gutter-width,xs);
+$grid-gutter-width:map-get($grid-gutter-width,xl);
+
+*/
+
+.container,
+.container-fluid {
+    padding: 0 2rem;
+    
+    @include media-breakpoint-up(xxl){
+        padding: 0 4rem;
+    }
+    
+    .row {
+        margin-left: -2rem;
+        margin-right: -2rem;
+        
+        @include media-breakpoint-up(xxl){
+            margin-left: -4rem;
+            margin-right: -4rem;
+        }
+    }
+    
+    .col, [class*="col-"] {
+        padding: 0 2rem;
+        
+        @include media-breakpoint-up(xxl){
+            padding: 0 4rem; 
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
