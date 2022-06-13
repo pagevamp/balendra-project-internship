@@ -1,0 +1,24 @@
+<section class="testimonial">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-10 col-lg-8">
+                <h2 class="h2">@@title</h2>
+                <p>@@description</p>
+                <div class="avatar">
+                    <img src="@@imageLink" alt="">
+                </div>
+                <div class="author">
+                    @@author
+                </div>
+                <ul class="social-icons d-flex align-items-center justify-content-center">
+                    @@for (var i=0; i < socialIcons.list.length; i++) {
+                        @@include('../social-icons/social-icons.html',`+(JSON.stringify(socialIcons.list[i]))+`)
+                    }
+                </ul>
+                <div class="paragraph">
+                    <p>@@paragraph</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
