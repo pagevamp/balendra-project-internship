@@ -43,7 +43,7 @@ $grid-gutter-width:map-get($grid-gutter-width,xl);
 .container-fluid {
     padding: 0 2rem;
     
-    @include media-breakpoint-up(xxl){
+    @include media-breakpoint-up(md){
         padding: 0 4rem;
     }
     
@@ -51,7 +51,7 @@ $grid-gutter-width:map-get($grid-gutter-width,xl);
         margin-left: -2rem;
         margin-right: -2rem;
         
-        @include media-breakpoint-up(xxl){
+        @include media-breakpoint-up(md){
             margin-left: -4rem;
             margin-right: -4rem;
         }
@@ -60,7 +60,7 @@ $grid-gutter-width:map-get($grid-gutter-width,xl);
     .col, [class*="col-"] {
         padding: 0 2rem;
         
-        @include media-breakpoint-up(xxl){
+        @include media-breakpoint-up(md){
             padding: 0 4rem; 
         }
     }
