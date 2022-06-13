@@ -370,8 +370,22 @@ ul {
     }
 }
 
+.ratio-238x279 {
+    @include media-breakpoint-up(md){
+        --bs-aspect-ratio: 82%;
+    }
+    
+    @include media-breakpoint-up(xxl){
+        --bs-aspect-ratio: 63%;
+    }
+}
+
 .fz-18 {
     font-size: 1.8rem;
+}
+
+.fw-semi-bold {
+    font-weight: 600;
 }
 
 .drop-shadow {
