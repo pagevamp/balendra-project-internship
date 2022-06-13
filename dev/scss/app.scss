@@ -29,6 +29,7 @@
 
 // 4. Helpers
 @import '../../node_modules/bootstrap/scss/helpers';
+@import '../../node_modules/swiper/swiper';
 
 
 // 5. Helpers
@@ -70,6 +71,7 @@
 @import "layout/main";
 @import "layout/post";
 @import "layout/hero";
+@import "layout/content-with-image-a01";
 
 
 // 11. Cards

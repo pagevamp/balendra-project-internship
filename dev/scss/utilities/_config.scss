@@ -50,7 +50,7 @@ p {
     margin-bottom: 2.4rem;
     
     @include media-breakpoint-up(lg) {
-        font-size:  4rem;       
+        margin-bottom:  4rem;       
     }
     
     &:last-child {
