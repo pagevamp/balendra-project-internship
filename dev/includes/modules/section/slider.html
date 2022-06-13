@@ -4,11 +4,14 @@
             <div class="eyebrow mb-6 mb-md-10">
                 @@eyebrow
             </div>
-            <div class="slider__slides-hold border-top border-8">
-                @@for (var i=0; i < sliderList.list.length; i++) {
-                    @@include('../slider-info/slider-info.html',`+(JSON.stringify(sliderList.list[i]))+`)
-                }
+            <div class="swiper border-top border-8">
+                <div class="slider__slides-hold swiper-wrapper ">
+                    @@for (var i=0; i < sliderList.list.length; i++) {
+                        @@include('../slider-info/slider-info.html',`+(JSON.stringify(sliderList.list[i]))+`)
+                    }
+                </div>
             </div>
+            
         </div> 
     </div>
 </section>

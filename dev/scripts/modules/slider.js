@@ -313,13 +313,15 @@
 
 // export default slider;
 // new slider();
+import Swiper from "swiper/bundle";
 
-
-import Swiper, { Navigation, Pagination } from 'swiper';
-
-
-const swiper = new Swiper('.slider__slides-hold', {
+export function swiper() {
+  const swiper = new Swiper('.swiper', {
     // configure Swiper to use modules
-    modules: [Navigation, Pagination]
+    // modules: [Navigation, Pagination]
   });
+
+  // console.log(swiper);
+}
+
 
