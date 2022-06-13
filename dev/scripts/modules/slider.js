@@ -318,9 +318,16 @@ import Swiper from "swiper/bundle";
 export function swiper() {
   const swiper = new Swiper('.swiper', {
     // configure Swiper to use modules
-    // modules: [Navigation, Pagination]
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    
+    pagination: {
+      el: ".swiper-pagination",
+    },
   });
-
+  
   // console.log(swiper);
 }
 
