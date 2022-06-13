@@ -315,15 +315,11 @@
 // new slider();
 
 
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
+import Swiper, { Navigation, Pagination } from 'swiper';
 
-// const swiper = new Swiper('.slider__slides-hold', {
-//     // configure Swiper to use modules
-//     modules: [Navigation, Pagination],
-//     ...
-//   });
 
-  console.log('hello world');
+const swiper = new Swiper('.slider__slides-hold', {
+    // configure Swiper to use modules
+    modules: [Navigation, Pagination]
+  });
+

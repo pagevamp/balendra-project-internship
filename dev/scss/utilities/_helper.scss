@@ -363,3 +363,9 @@ ul {
         color: $teal !important;
     }
 }
+
+.ratio-327x233 {
+    @include media-breakpoint-up(md){
+        --bs-aspect-ratio: 55.3%;
+    }
+}
