@@ -2,12 +2,14 @@
     <div class="container">
         <div class="row justify-content-center text-center">
             <div class="col-md-10 col-lg-8">
-                <h2 class="h2">@@title</h2>
-                <p>@@description</p>
-                <div class="avatar">
-                    <img src="@@imageLink" alt="">
+                <h2 class="h2 mb-4 mb-lg-7 mb-xxl-6">@@title</h2>
+                <div class="mb-6 mb-lg-11  mb-xxl-14">
+                    <p>@@description</p>
                 </div>
-                <div class="author">
+                <div class="avatar position-relative mb-7">
+                    <img src="@@imageLink" class="rounded-circle position-relative overflow-hidden mx-auto" alt="">
+                </div>
+                <div class="author text-chambray fs-23 mb-4">
                     @@author
                 </div>
                 <ul class="social-icons d-flex align-items-center justify-content-center">
@@ -15,7 +17,7 @@
                         @@include('../social-icons/social-icons.html',`+(JSON.stringify(socialIcons.list[i]))+`)
                     }
                 </ul>
-                <div class="paragraph">
+                <div class="paragraph body-sm">
                     <p>@@paragraph</p>
                 </div>
             </div>

@@ -14,12 +14,16 @@ body {
 body {
     letter-spacing: normal;
     @include font-smoothing(on);
-    font-size:  2rem;
+    font-size:  1.8rem;
     color: $primary;
     line-height: 1.5;
     
     @include media-breakpoint-up(lg) {
         font-size:  2.3rem;       
+    }
+    
+    @include media-breakpoint-up(xl) {
+        font-size:  2.8rem;       
     }
     
     &.prevent-scrolling {
