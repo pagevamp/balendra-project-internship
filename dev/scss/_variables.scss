@@ -44,7 +44,6 @@ $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #198754 !default;
-$teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
 $space:   #222222 !default;
 $teal:    #114E60 !default;
@@ -52,6 +51,7 @@ $mint:    #F4FEF3 !default;
 $peach:   #F5CEBE !default;
 $blush:   #F4EEE8 !default;
 $moon:    #EAEFED !default;
+$chambray:#325288 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -70,6 +70,7 @@ $colors: (
 "gray":       $gray-600,
 "gray-dark":  $gray-800,
 "black":      $black
+// "chambray":   $chambray
 ) !default;
 // scss-docs-end colors-map
 
@@ -87,6 +88,7 @@ $mint:          $mint;
 $peach:         $peach;
 $blush:         $blush;
 $moon:          $moon;
+$chambray:      $chambray;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -103,7 +105,9 @@ $theme-colors: (
 "mint":       $mint,
 "peach":      $peach,
 "blush":      $blush,
-"moon":       $moon
+"moon":       $moon,
+"chambray":   $chambray
+
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -604,7 +608,10 @@ $aspect-ratios: (
 "327x233": calc(233 / 327 * 100%),
 "376x376": calc(376 / 376 * 100%),
 "327x281": calc(281 / 327 * 100%),
-"238x279": calc(279 / 238 * 100%)
+"238x279": calc(279 / 238 * 100%),
+"319x268": calc(268 / 319 * 100%),
+"327x334": calc(334 / 327 * 100%)
+
 ) !default;
 // scss-docs-end aspect-ratios
 // stylelint-enable function-disallowed-list

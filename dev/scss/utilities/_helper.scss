@@ -380,6 +380,36 @@ ul {
     }
 }
 
+.ratio-319x268 {
+    @include media-breakpoint-up(md){
+        --bs-aspect-ratio: 70%;
+    }
+    
+    @include media-breakpoint-up(xxl){
+        --bs-aspect-ratio: 78%;
+    }
+}
+
+.ratio-327x281 {
+    @include media-breakpoint-up(md){
+        --bs-aspect-ratio: 150%;
+    }
+    
+    @include media-breakpoint-up(xxl){
+        --bs-aspect-ratio: 107.3%;
+    }
+}
+
+.ratio-327x334 {
+    @include media-breakpoint-up(md){
+        --bs-aspect-ratio: 127%;
+    }
+    
+    @include media-breakpoint-up(xxl){
+        --bs-aspect-ratio: 90%;
+    }
+}
+
 .fz-18 {
     font-size: 1.8rem;
 }
@@ -392,14 +422,51 @@ ul {
     filter: drop-shadow(8px 8px 0px #F5CEBE);
 }
 
-.body-sm {
+.body {
+    &-sm {
+        font-size: 1.8rem;
+    }
+    
+    &-lg {
+        font-size: 2.3rem;
+    }
+    
+    &-xl {
+        font-size: 2.8rem;
+    }
+}
+
+.fs-sm-md {
     font-size: 1.8rem;
+    
+    @include media-breakpoint-up(md){
+        font-size: 1.6rem;
+    }
+    
+    @include media-breakpoint-up(xxl){
+        font-size: 1.8rem;
+    }
+    
 }
 
-.body-lg {
+.fs-18-h3 {
+    font-size: 1.8rem;
+    
+    @include media-breakpoint-up(xl){
+        font-size: 3.5rem;
+    }
+}
+
+.fs-23 {
     font-size: 2.3rem;
+    line-height: 1.4;
+    @include media-breakpoint-up(xl){
+        font-size: 2.8rem;
+    }
 }
 
-.body-xl{
-    font-size: 2.8rem;
+.text-hover-peach {
+    &:hover {
+        color: $peach !important;
+    }
 }

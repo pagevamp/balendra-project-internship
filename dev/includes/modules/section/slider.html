@@ -1,20 +1,21 @@
-<section class="slider py-6 py-md-20 py-xl-30">
+<section class="slider bg-blush py-6 py-md-20 py-xl-30">
     <div class="container">
-        <div class="slider__details px-lg-20 ">
+        <div class="slider__details px-lg-20">
             <div class="eyebrow mb-6 mb-md-10">
                 @@eyebrow
             </div>
-            <div class="swiper border-top border-8">
-                <div class="slider__slides-hold swiper-wrapper ">
+            <div class="swiper border-top border-8 ">
+                <div class="slider__slides-hold swiper-wrapper mb-10">
                     @@for (var i=0; i < sliderList.list.length; i++) {
                         @@include('../slider-info/slider-info.html',`+(JSON.stringify(sliderList.list[i]))+`)
                     }
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div>
-            
+                <div class="d-flex flex-wrap-wrap justify-content-between align-items-center">
+                    <div class="swiper-button-next d-flex justify-content-center align-items-center bg-white rounded-circle"><i class="icon-Left"></i></div>
+                    <div class="swiper-pagination d-flex align-items-center justify-content-center"></div>
+                    <div class="swiper-button-prev d-flex justify-content-center align-items-center bg-white rounded-circle"><i class="icon-arrow-right2"></i></div>
+                </div>                
+            </div>            
         </div> 
     </div>
 </section>

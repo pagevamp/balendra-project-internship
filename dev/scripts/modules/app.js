@@ -15,10 +15,7 @@ import { swiper } from './slider';
 class global {
     constructor() {
         this.myModal = document.getElementById('exampleModal')
-        this.stickyHeader();
-        this.megamenuPopup();
-        this.toggleContent();
-        this.readMore();
+        
         this.slider();
     }
     

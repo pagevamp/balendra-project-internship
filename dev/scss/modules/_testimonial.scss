@@ -1,0 +1,32 @@
+.avatar {
+    img {
+        height: 15.3rem;
+        width: 15.3rem;
+        z-index: 2;
+        
+        @include media-breakpoint-up(lg){
+            height: 23.6rem;
+            width: 23.6rem;
+        }
+    }    
+    
+    &:before {
+        position: absolute;
+        content: '';
+        width: 16.9rem;
+        height: 16.9rem;
+        background: $teal;
+        border-radius: 50%;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin-left: -2.2rem;
+        
+        @include media-breakpoint-up(lg){
+            height: 26rem;
+            width: 26rem;
+            margin-left: -3.4rem;
+        }
+    }
+}
