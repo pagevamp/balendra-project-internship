@@ -81,7 +81,7 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         $white !default;
 $dark:          $gray-900 !default;
 $teal:          $teal;
 $mint:          $mint;
@@ -515,7 +515,7 @@ $grid-breakpoints: (
 xs: 0,
 sm: 576px,
 md: 768px,
-lg: 992px,
+lg: 1024px,
 xl: 1200px,
 xxl: 1400px
 ) !default;
@@ -608,7 +608,7 @@ $aspect-ratios: (
 "327x233": calc(233 / 327 * 100%),
 "376x376": calc(376 / 376 * 100%),
 "327x281": calc(281 / 327 * 100%),
-"238x279": calc(279 / 238 * 100%),
+"279x238": calc(238 / 279 * 100%),
 "319x268": calc(268 / 319 * 100%),
 "327x334": calc(334 / 327 * 100%)
 

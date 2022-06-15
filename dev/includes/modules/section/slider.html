@@ -1,11 +1,11 @@
 <section class="slider bg-blush py-6 py-md-20 py-xl-30">
     <div class="container">
-        <div class="slider__details px-lg-20">
-            <div class="eyebrow mb-6 mb-md-10">
+        <div class="slider__details px-xxl-20">
+            <div class="eyebrow text-uppercase mb-6 mb-md-10">
                 @@eyebrow
             </div>
             <div class="swiper border-top border-8 ">
-                <div class="slider__slides-hold swiper-wrapper mb-10">
+                <div class="slider__slides-hold swiper-wrapper mb-6 mb-lg-9 mb-xxl-6">
                     @@for (var i=0; i < sliderList.list.length; i++) {
                         @@include('../slider-info/slider-info.html',`+(JSON.stringify(sliderList.list[i]))+`)
                     }

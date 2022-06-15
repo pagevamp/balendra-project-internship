@@ -57,6 +57,7 @@ h5,
 .body-1,
 body {
     font-size: 1.8rem;
+    letter-spacing: 0;
     @include media-breakpoint-up(xl) {
         font-size: 2.3rem;
         line-height: 1.2222;
@@ -68,6 +69,7 @@ h6,
     font-size: 1.6rem;
     line-height: 2rem;
     font-weight: 600;
+    letter-spacing: 0.1em;
     @include media-breakpoint-up(xl) {
         font-size: 1.8rem;
         line-height: 1.2222;
@@ -78,6 +80,7 @@ h6,
     font-size: 1.6rem;
     line-height: 1.2222;
     font-weight: 600;
+    letter-spacing: 0.1em;
     
     @include media-breakpoint-up(xl) {
         font-size: 1.8rem;            
