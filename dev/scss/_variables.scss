@@ -52,6 +52,7 @@ $peach:   #F5CEBE !default;
 $blush:   #F4EEE8 !default;
 $moon:    #EAEFED !default;
 $chambray:#325288 !default;
+
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -370,7 +371,7 @@ $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
 $enable-rfs:                  true !default;
 $enable-validation-icons:     true !default;
-$enable-negative-margins:     false !default;
+$enable-negative-margins:     true !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
 
@@ -610,7 +611,10 @@ $aspect-ratios: (
 "327x281": calc(281 / 327 * 100%),
 "279x238": calc(238 / 279 * 100%),
 "319x268": calc(268 / 319 * 100%),
-"327x334": calc(334 / 327 * 100%)
+"327x334": calc(334 / 327 * 100%),
+"327x245": calc(245 / 327 * 100%),
+"335x201": calc(201 / 335 * 100%)
+
 
 ) !default;
 // scss-docs-end aspect-ratios

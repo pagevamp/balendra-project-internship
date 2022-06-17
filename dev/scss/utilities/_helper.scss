@@ -410,6 +410,30 @@ ul {
     }
 }
 
+.ratio-327x245 {
+    @include media-breakpoint-up(md){
+        --bs-aspect-ratio:56.17%;        
+    } 
+    
+    @include media-breakpoint-up(xxl){
+        --bs-aspect-ratio:57.22%;        
+    }
+}
+
+.ratio-335x201 {
+    @include media-breakpoint-up(md){  
+        --bs-aspect-ratio:47%; 
+    } 
+    
+    @include media-breakpoint-up(xxl){
+    }
+}
+
+.fs-14 {
+    font-size: 1.4rem;
+}
+
+
 .fz-18 {
     font-size: 1.8rem;
 }
@@ -449,9 +473,11 @@ ul {
     
     @include media-breakpoint-up(xxl){
         font-size: 1.8rem;
-    }
-    
+    }    
 }
+
+
+
 
 .fs-18-h3 {
     font-size: 1.8rem;
@@ -471,6 +497,22 @@ ul {
 
 .fs-28 {
     font-size: 2.8rem;
+}
+
+.fs-20-23 {
+    font-size: 2rem;
+    
+    @include media-breakpoint-up(xxl){
+        font-size: 2.3rem;
+    }
+}
+
+.fs-16-18 {
+    font-size: 1.6rem;
+    
+    @include media-breakpoint-up(xxl){
+        font-size: 1.8rem;
+    }
 }
 
 .ls-2 {
@@ -496,10 +538,25 @@ ul {
     }
     
 }
+.fs-16-18 {
+    font-size: 1.6rem;
+    
+    @include media-breakpoint-up(xxl){
+        font-size: 1.8rem;
+    }    
+}
 
 .text-hover-peach {
     &:hover {
         color: $peach !important;
     }
+}
+
+.moon-shadow {
+    box-shadow: 8px 8px 0px #EAEFED;
+}
+
+.blush-shadow {
+    box-shadow: 8px 8px 0px $blush;
 }
 

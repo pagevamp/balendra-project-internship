@@ -1,0 +1,44 @@
+.blog-search {
+    .form-element {
+        @include media-breakpoint-up(md){
+            max-width: 500px;
+        }
+    }
+    
+    .search-btn {
+        right: 2rem;
+    }
+}
+
+article {
+    a {
+        &:hover {
+            background: #F4EEE8;
+            box-shadow: 8px 8px 0px $peach;
+        }
+    }
+    
+    .ratio-327x245 {
+        @include media-breakpoint-up(md){
+            --bs-aspect-ratio:66.4%; 
+        }
+        @include media-breakpoint-up(xxl){
+            --bs-aspect-ratio:75%; 
+        }
+    }
+}
+
+.circular-list {
+    li {
+        &::before {
+            position: absolute;
+            content: '';
+            top: 10px;
+            left: 0;
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            background-color: $black;
+        }
+    }
+}
