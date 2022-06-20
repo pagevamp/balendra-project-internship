@@ -25,10 +25,12 @@
 @import '../../node_modules/bootstrap/scss/buttons';
 @import '../../node_modules/bootstrap/scss/button-group';
 @import '../../node_modules/bootstrap/scss/modal';
+@import '../../node_modules/bootstrap/scss/dropdown';
 
 
 // 4. Helpers
 @import '../../node_modules/bootstrap/scss/helpers';
+@import '../../node_modules/swiper/swiper';
 
 
 // 5. Helpers
@@ -61,7 +63,10 @@
 @import 'modules/forms';
 @import 'modules/thumbnail';
 @import 'modules/swiper';
-
+@import "modules/content-with-image-a01";
+@import "modules/testimonial";
+@import "modules/social-icons";
+@import "modules/pagination";
 
 // 10. Global Components to use
 @import "layout/header";
@@ -74,3 +79,5 @@
 
 // 11. Cards
 @import 'cards/card-a01';
+@import "modules/blogs-collection/blogs-collection";
+

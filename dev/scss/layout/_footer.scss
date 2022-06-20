@@ -3,3 +3,30 @@
         padding: rem(30px 0);
     }
 }
+
+.theme-footer {
+    .logo {
+        width: 155px;
+        
+        @include media-breakpoint-up(xxl){
+            width: 274px;
+        }
+    }
+    form {
+        input {
+            @include placeholder {
+                color: $blush;
+            }
+        }       
+    }    
+}
+
+
+.toggle-info{
+    .toggle-list{
+        display: none;
+        @include media-breakpoint-up(xl){
+            display: block;
+        }
+    }
+}

@@ -1,32 +1,5 @@
 /*
-$grid-gutter-widths: (
-sm: 1rem,
-md: 1.5rem,
-lg: 2rem,
-xl: 2.5rem,
-xxl: 3rem,
-);
 
-@each $grid-breakpoints, $gutter-width in $grid-gutter-widths {
-    $container-padding-x: $gutter-width*.5;
-    $grid-gutter-width: $gutter-width;
-    @include media-breakpoint-up($grid-breakpoints, $name) {
-        .container,
-        .container-fluid {
-            @include make-container();
-        }
-        
-        .row {
-            @include make-row();
-            
-            > * {
-                @include make-col-ready();
-            }
-        }
-        @include make-grid-columns();
-        
-    }
-}
 
 $grid-gutter-width: (
 xs: 40px,
@@ -68,28 +41,20 @@ $grid-gutter-width:map-get($grid-gutter-width,xl);
 
 .container,
 .container-fluid {
-    padding: 0 2rem;
+    padding: 0 2.4rem;
     
-    @include media-breakpoint-up(xxl){
+    @include media-breakpoint-up(lg){
         padding: 0 4rem;
-    }
+    }   
+    
     
     .row {
         margin-left: -2rem;
         margin-right: -2rem;
-        
-        @include media-breakpoint-up(xxl){
-            margin-left: -4rem;
-            margin-right: -4rem;
-        }
     }
     
     .col, [class*="col-"] {
         padding: 0 2rem;
-        
-        @include media-breakpoint-up(xxl){
-            padding: 0 4rem; 
-        }
     }
 }
 

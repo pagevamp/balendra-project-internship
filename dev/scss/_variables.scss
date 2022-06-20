@@ -44,13 +44,15 @@ $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #198754 !default;
-$teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
 $space:   #222222 !default;
 $teal:    #114E60 !default;
 $mint:    #F4FEF3 !default;
 $peach:   #F5CEBE !default;
 $blush:   #F4EEE8 !default;
+$moon:    #EAEFED !default;
+$chambray:#325288 !default;
+
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -69,6 +71,7 @@ $colors: (
 "gray":       $gray-600,
 "gray-dark":  $gray-800,
 "black":      $black
+// "chambray":   $chambray
 ) !default;
 // scss-docs-end colors-map
 
@@ -79,12 +82,14 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         $white !default;
 $dark:          $gray-900 !default;
 $teal:          $teal;
 $mint:          $mint;
 $peach:         $peach;
 $blush:         $blush;
+$moon:          $moon;
+$chambray:      $chambray;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -101,6 +106,9 @@ $theme-colors: (
 "mint":       $mint,
 "peach":      $peach,
 "blush":      $blush,
+"moon":       $moon,
+"chambray":   $chambray
+
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -363,7 +371,7 @@ $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
 $enable-rfs:                  true !default;
 $enable-validation-icons:     true !default;
-$enable-negative-margins:     false !default;
+$enable-negative-margins:     true !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
 
@@ -508,7 +516,7 @@ $grid-breakpoints: (
 xs: 0,
 sm: 576px,
 md: 768px,
-lg: 992px,
+lg: 1024px,
 xl: 1200px,
 xxl: 1400px
 ) !default;
@@ -524,11 +532,7 @@ xxl: 1400px
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
-sm: 540px,
-md: 720px,
-lg: 960px,
-xl: 1140px,
-xxl: 1280px
+xxl: 1360px
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -561,10 +565,11 @@ $border-widths: (
 2: 2px,
 3: 3px,
 4: 4px,
-5: 5px
+5: 5px,
+8: 8px
 ) !default;
 
-$border-color:                $gray-300 !default;
+$border-color:                $secondary !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
@@ -601,9 +606,16 @@ $transition-collapse-width:   width .35s ease !default;
 // scss-docs-start aspect-ratios
 $aspect-ratios: (
 "1x1": 100%,
-"4x3": calc(3 / 4 * 100%),
-"16x9": calc(9 / 16 * 100%),
-"21x9": calc(9 / 21 * 100%)
+"327x233": calc(233 / 327 * 100%),
+"376x376": calc(376 / 376 * 100%),
+"327x281": calc(281 / 327 * 100%),
+"279x238": calc(238 / 279 * 100%),
+"319x268": calc(268 / 319 * 100%),
+"327x334": calc(334 / 327 * 100%),
+"327x245": calc(245 / 327 * 100%),
+"335x201": calc(201 / 335 * 100%)
+
+
 ) !default;
 // scss-docs-end aspect-ratios
 // stylelint-enable function-disallowed-list
