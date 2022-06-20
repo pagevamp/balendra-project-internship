@@ -560,3 +560,8 @@ ul {
     box-shadow: 8px 8px 0px $blush;
 }
 
+.width {
+    @include media-breakpoint-up(md){
+        max-width: 400px;
+    }
+}

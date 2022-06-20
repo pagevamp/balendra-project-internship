@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('includes/head.html',{'pageTitle':'Final project-internship'})
+</head>
+<body class="w-100 overflow-x-hidden">
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">   
+            @@include('includes/header.html', {
+                'headerSkin': 'theme-header--dark'
+            })         
+            <main class="theme-main">
+                
+                @@include('includes/modules/section/leadspace-a02.html', {
+                    'title' : 'Contact us',
+                    'description': 'Ut posuere ullamcorper euismod. Donec a justo pulvinar diam dictum lobortis vulputate non nisi. Vestibulum pellentesque eget lorem ultrices lobortis.',                    
+                    'imageLink': 'images/leadspacea03.jpg',
+                })                
+                
+                
+                @@include('includes/modules/section/forms/forms.html', {
+                    
+                })
+                
+                
+            </main>
+            @@include('includes/footer.html')
+            @@include('includes/scripts.html')
+        </div>        
+        @@include('includes/scripts.html')
+    </div>
+</body>
+</html>
