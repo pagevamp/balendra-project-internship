@@ -5,7 +5,10 @@
 </head>
 <body class="w-100 overflow-x-hidden">
     <div class="theme-app d-flex flex-column">
-        <div class="theme-wrap position-relative">            
+        <div class="theme-wrap position-relative">   
+            @@include('includes/header.html', {
+                'headerSkin': 'theme-header--dark'
+            })            
             <main class="theme-main">
                 
                 @@include('includes/modules/section/leadspace-a01.html', {
@@ -85,6 +88,7 @@
                 } 
                 )
             </main>
+            @@include('includes/footer.html')   
         </div>        
         @@include('includes/scripts.html')
     </div>

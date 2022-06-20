@@ -4,7 +4,7 @@
             <form action="#" class="contact-form needs-validation" novalidate>
                 <div class="row mb-11">
                     <div class="col-md-6 width">
-                        <select name="" id="" class="w-100">
+                        <select name="" id="" >
                             <option value="">Project inquiries</option>
                             <option value="">Careers</option>
                             <option value="">Media</option>
@@ -42,3 +42,22 @@
         </div>
     </div>
 </section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+<!-- <script type="text/javascript" src="scripts/modules/jcf.js"> </script> -->
+<script type="text/javascript" src="scripts/modules/select.js"> </script>
+<script type="text/javascript">
+    jQuery(function() {
+        initCustomForms();
+    });
+    
+    function initCustomForms() {
+	jcf.setOptions('Select', {
+		wrapNative: false,
+		wrapNativeOnMobile: false,
+	});
+	jcf.replaceAll();
+}
+</script>

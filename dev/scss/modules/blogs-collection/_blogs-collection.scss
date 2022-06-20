@@ -10,6 +10,15 @@
     }
 }
 
+.dropdown {
+    .dropdown-menu {
+        position: relative !important;
+        @include media-breakpoint-up(md){
+            position: absolute !important;
+        }
+    } 
+}
+
 article {
     a {
         &:hover {

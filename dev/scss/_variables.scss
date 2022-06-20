@@ -813,7 +813,7 @@ $input-btn-padding-y-lg:      1.6rem !default;
 $input-btn-padding-x-lg:      1.6rem !default;
 $input-btn-font-size-lg:      2.3rem !default;
 
-$input-btn-border-width:      $border-width !default;
+$input-btn-border-width:      0.2rem !default;
 // scss-docs-end input-btn-variables
 
 
@@ -1203,7 +1203,7 @@ $navbar-dark-brand-hover-color:           $navbar-dark-active-color !default;
 // Dropdown menu container and contents.
 
 // scss-docs-start dropdown-variables
-$dropdown-min-width:                10rem !default;
+$dropdown-min-width:                28.6rem !default;
 $dropdown-padding-x:                0 !default;
 $dropdown-padding-y:                .5rem !default;
 $dropdown-spacer:                   .125rem !default;
@@ -1227,8 +1227,8 @@ $dropdown-link-active-bg:           $component-active-bg !default;
 
 $dropdown-link-disabled-color:      $gray-500 !default;
 
-$dropdown-item-padding-y:           $spacer * .25 !default;
-$dropdown-item-padding-x:           $spacer !default;
+$dropdown-item-padding-y:           0.3rem !default;
+$dropdown-item-padding-x:           0.1rem !default;
 
 $dropdown-header-color:             $gray-600 !default;
 $dropdown-header-padding:           $dropdown-padding-y $dropdown-item-padding-x !default;

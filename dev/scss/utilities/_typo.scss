@@ -17,7 +17,7 @@ h1,
 .display-1 {
     font-size: 3.5rem;
     line-height: 1.1454;    
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
         font-size: 5.5rem;
     }
 }
@@ -26,7 +26,7 @@ h2,
 .h2 {
     font-size: 2.8rem;
     line-height: 1.15909;
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
         font-size: 4.4rem;
     }
 }
@@ -35,7 +35,7 @@ h3,
 .h3 {
     font-size: 2.4rem;
     line-height: 1.1428;
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
         font-size: 3.5rem;
     }
 }
@@ -44,7 +44,7 @@ h4,
 .h4 {
     font-size: 2rem;
     line-height: 1.1428;
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
         font-size: 2.8rem;
     }
 }
@@ -56,7 +56,7 @@ body {
     font-size: 1.8rem;
     letter-spacing: 0;
     line-height: 1.2222;
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
         font-size: 2.3rem;
     }
 }
@@ -69,7 +69,7 @@ h6,
     letter-spacing: 0.1em;
     line-height: 1.2222;
     font-family: 'Inter',serif;
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
         font-size: 1.8rem;
     }
 }

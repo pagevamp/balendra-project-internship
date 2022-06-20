@@ -3,11 +3,18 @@
     display: inline-block;
     vertical-align: top;
     position: relative;
-    border: 1px solid #777;
+    border: 2px solid $primary;
     background: #fff;
     margin: 0 0 12px;
     min-width: 150px;
-    height: 26px;
+    width: 100%;
+    line-height: 1.1428;
+    font-size: 2.3rem;
+    padding: 1.2rem 1.2rem;
+    
+    @include media-breakpoint-up(lg) {
+        font-size: 2.8rem;        
+    }
 }
 .jcf-select select {
     z-index: 1;
@@ -20,18 +27,26 @@
     overflow: hidden;
     cursor: default;
     display: block;
-    font-size: 13px;
-    line-height: 26px;
     margin: 0 35px 0 8px;
 }
 .jcf-select .jcf-select-opener {
     position: absolute;
     text-align: center;
-    background: #aaa;
-    width: 26px;
+    width: 50px;
     bottom: 0;
     right: 0;
     top: 0;
+    
+    &::after {
+        position: absolute;
+        content: '\e904';
+        right: 2.2rem;
+        font-family: 'Icons';
+        color:$black;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.8rem;
+    }
 }
 body > .jcf-select-drop {
     position: absolute;
@@ -62,7 +77,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
     content: '...';
 }
 .jcf-select-drop .jcf-select-drop-content {
-    border: 1px solid #f00;
+    background-color: $primary;
 }
 .jcf-select-drop.jcf-compact-multiple .jcf-hover {
     background: none;
@@ -99,9 +114,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    background: #fff;
-    line-height: 14px;
-    font-size: 12px;
+    background: $primary;
     width: 100%;
 }
 .jcf-list .jcf-list-content {
@@ -109,6 +122,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
     display: inline-block;
     overflow: auto;
     width: 100%;
+    padding: 2.4rem;
 }
 .jcf-list ul {
     list-style: none;
@@ -118,19 +132,51 @@ body > .jcf-select-drop.jcf-drop-flipped {
 .jcf-list ul li {
     overflow: hidden;
     display: block;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    margin-bottom: 1.6rem;
+    font-size: 2.3rem;
+    
+    span {
+        position: relative;
+        &:before,
+        &:after {
+            position: absolute;
+        }
+        
+        &:before {
+            content: "";
+            height: 12px;
+            width: 8px;
+            border-bottom: 2px solid $secondary;
+            border-right: 2px solid $secondary;
+            transform: rotate(45deg);
+            left: -1.7rem;
+            top: 1rem;
+            opacity: 0;
+        }
+        
+        &:after {
+            content: "\e90d";
+            font-family: 'Icons';
+            right: -1.5rem;
+            top: 1rem;
+            color: $secondary;
+            font-style: 1rem;
+            font-size: 1rem;
+            opacity: 0;
+        }
+    }
+    
+    
 }
 .jcf-list .jcf-overflow {
     overflow: auto;
 }
 .jcf-list .jcf-option {
-    white-space: nowrap;
-    overflow: hidden;
     cursor: default;
     display: block;
-    padding: 5px 9px;
-    color: #656565;
-    min-height: 14px;
-    height: 1%;
+    color: $white;
 }
 .jcf-list .jcf-disabled {
     background: #fff !important;
@@ -138,8 +184,12 @@ body > .jcf-select-drop.jcf-drop-flipped {
 }
 .jcf-select-drop .jcf-hover,
 .jcf-list-box .jcf-selected {
-    background: #e6e6e6;
-    color: #000;
+    color: $secondary;
+    
+    &:after,
+    &:before {
+        opacity: 1;
+    }
 }
 .jcf-list .jcf-optgroup-caption {
     white-space: nowrap;

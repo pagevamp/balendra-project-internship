@@ -366,17 +366,21 @@ ul {
 
 .ratio-327x233 {
     @include media-breakpoint-up(md){
-        --bs-aspect-ratio: 55.3%;
+        --bs-aspect-ratio: 53.8%;
+    }
+    
+    @include media-breakpoint-up(xxl){
+        --bs-aspect-ratio: 54.4%;
     }
 }
 
 .ratio-279x238 {
     @include media-breakpoint-up(md){
-        --bs-aspect-ratio: 68%;
+        --bs-aspect-ratio: 68.4%;
     }
     
     @include media-breakpoint-up(xxl){
-        --bs-aspect-ratio: 63%;
+        --bs-aspect-ratio: 59.8%;
     }
 }
 
@@ -406,7 +410,7 @@ ul {
     }
     
     @include media-breakpoint-up(xxl){
-        --bs-aspect-ratio: 90%;
+        --bs-aspect-ratio: 70.7%;
     }
 }
 
@@ -416,7 +420,7 @@ ul {
     } 
     
     @include media-breakpoint-up(xxl){
-        --bs-aspect-ratio:57.22%;        
+        --bs-aspect-ratio:56.4%;        
     }
 }
 
@@ -425,8 +429,7 @@ ul {
         --bs-aspect-ratio:47%; 
     } 
     
-    @include media-breakpoint-up(xxl){
-    }
+    
 }
 
 .fs-14 {
@@ -450,19 +453,7 @@ ul {
     font-size: 1.6rem;
 }
 
-.body {
-    &-sm {
-        font-size: 1.8rem;
-    }
-    
-    &-lg {
-        font-size: 2.3rem;
-    }
-    
-    &-xl {
-        font-size: 2.8rem;
-    }
-}
+
 
 .fs-sm-md {
     font-size: 1.8rem;
@@ -504,14 +495,6 @@ ul {
     
     @include media-breakpoint-up(xxl){
         font-size: 2.3rem;
-    }
-}
-
-.fs-16-18 {
-    font-size: 1.6rem;
-    
-    @include media-breakpoint-up(xxl){
-        font-size: 1.8rem;
     }
 }
 
