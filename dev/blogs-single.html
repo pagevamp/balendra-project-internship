@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('includes/head.html',{'pageTitle':'Final project-internship'})
+</head>
+<body class="w-100 overflow-x-hidden">
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">   
+            @@include('includes/header.html', {
+                'headerSkin': 'theme-header--dark'
+            })         
+            <main class="theme-main">
+                @@include('includes/modules/section/leadspace-a01.html', {
+                    'title' : 'Interesting Facts I Bet You Never Knew About BLOGS',
+                    'bgColor': 'bg-mint',                    
+                    'imageLink': 'images/leadspacea02.jpg',                    
+                    'card': false
+                })
+                
+                @@include('includes/modules/section/blogs-single.html', {
+                    'imageLink': 'images/blog-detail.jpg',
+                    'circularList': { 
+                        "list": [
+                        {
+                            'listContent':'Aenean placerat pulvinar quam, et convallis arcu feugiat et. '
+                        },
+                        {
+                            'listContent':'Duis aliquet iaculis dapibus.'
+                        },
+                        {
+                            'listContent':'Aenean blandit massa vel lacus luctus cursus. '
+                        },
+                        {
+                            'listContent':'Sed aliquam ipsum non nibh commodo, non efficitur magna tempus. '
+                        },
+                        {
+                            'listContent':'Curabitur eget mi magna. Maecenas mollis lectus nulla, nec laoreet justo efficitur et. Maecenas ac justo eget sapien hendrerit sollicitudin in et ipsum.'
+                        }
+                        ]
+                    }
+                })               
+                
+                @@include('includes/modules/blog-list/blog-list.html', {
+                    'eyebrow': 'More Blog Notes',                                   
+                    'articleList': {
+                        "list": [
+                        {
+                            'articleImage':'images/blog1.jpg',
+                            'date':'June 11, 2021',
+                            'articleTitle': 'Interesting Facts I Bet You Never Knew About BLOGS'
+                        },
+                        {
+                            'articleImage':'images/blog2.jpg',
+                            'date':'June 11, 2021',
+                            'articleTitle': 'verything You Wanted to Know About BLOGS and Were Too EEmbarrassed to Ask'
+                        },
+                        {
+                            'articleImage':'images/blog3.jpg',
+                            'date':'June 11, 2021',
+                            'articleTitle': 'What Can You Do To Save Your BLOGS From Destruction By Social Media?'
+                        }                        
+                        ]
+                    }
+                    
+                })
+                
+                @@include('includes/footer.html')
+            </main>
+        </div>        
+        @@include('includes/scripts.html')
+    </div>
+</body>
+</html>

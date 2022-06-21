@@ -1,0 +1,204 @@
+/* select */
+.jcf-select {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    border: 2px solid $primary;
+    background: #fff;
+    margin: 0 0 12px;
+    min-width: 150px;
+    width: 100%;
+    line-height: 1.1428;
+    font-size: 2.3rem;
+    padding: 1.2rem 1.2rem;
+    
+    @include media-breakpoint-up(lg) {
+        font-size: 2.8rem;        
+    }
+}
+.jcf-select select {
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+.jcf-select .jcf-select-text {
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: default;
+    display: block;
+    margin: 0 35px 0 8px;
+}
+.jcf-select .jcf-select-opener {
+    position: absolute;
+    text-align: center;
+    width: 50px;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    
+    &::after {
+        position: absolute;
+        content: '\e904';
+        right: 2.2rem;
+        font-family: 'Icons';
+        color:$black;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.8rem;
+    }
+}
+body > .jcf-select-drop {
+    position: absolute;
+    margin: -1px 0 0;
+    z-index: 9999;
+}
+body > .jcf-select-drop.jcf-drop-flipped {
+    margin: 1px 0 0;
+}
+.jcf-select .jcf-select-drop {
+    position: absolute;
+    margin-top: 0px;
+    z-index: 9999;
+    top: 100%;
+    left: -1px;
+    right: -1px;
+}
+.jcf-select .jcf-drop-flipped {
+    bottom: 100%;
+    top: auto;
+}
+.jcf-select.jcf-compact-multiple {
+    max-width: 220px;
+}
+.jcf-select.jcf-compact-multiple .jcf-select-opener:before {
+    display: inline-block;
+    padding-top: 2px;
+    content: '...';
+}
+.jcf-select-drop .jcf-select-drop-content {
+    background-color: $primary;
+}
+.jcf-select-drop.jcf-compact-multiple .jcf-hover {
+    background: none;
+}
+.jcf-select-drop.jcf-compact-multiple .jcf-selected {
+    background: #e6e6e6;
+    color: #000;
+}
+.jcf-select-drop.jcf-compact-multiple .jcf-selected:before {
+    display: inline-block;
+    content: '';
+    height:4px;
+    width:8px;
+    margin:-7px 5px 0 -3px;
+    border:3px solid #777;
+    border-width:0 0 3px 3px;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=0.7071067811865467, M21=-0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
+}
+
+/* multiple select styles */
+.jcf-list-box {
+    overflow: hidden;
+    display: inline-block;
+    border: 1px solid #b8c3c9;
+    min-width: 200px;
+    margin: 0 15px;
+}
+/* select options styles */
+.jcf-list {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    background: $primary;
+    width: 100%;
+}
+.jcf-list .jcf-list-content {
+    vertical-align: top;
+    display: inline-block;
+    overflow: auto;
+    width: 100%;
+    padding: 2.4rem;
+}
+.jcf-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.jcf-list ul li {
+    overflow: hidden;
+    display: block;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    margin-bottom: 1.6rem;
+    font-size: 2.3rem;
+    
+    span {
+        position: relative;
+        &:before,
+        &:after {
+            position: absolute;
+        }
+        
+        &:before {
+            content: "";
+            height: 12px;
+            width: 8px;
+            border-bottom: 2px solid $secondary;
+            border-right: 2px solid $secondary;
+            transform: rotate(45deg);
+            left: -1.7rem;
+            top: 1rem;
+            opacity: 0;
+        }
+        
+        &:after {
+            content: "\e90d";
+            font-family: 'Icons';
+            right: -1.5rem;
+            top: 1rem;
+            color: $secondary;
+            font-style: 1rem;
+            font-size: 1rem;
+            opacity: 0;
+        }
+    }
+    
+    
+}
+.jcf-list .jcf-overflow {
+    overflow: auto;
+}
+.jcf-list .jcf-option {
+    cursor: default;
+    display: block;
+    color: $white;
+}
+.jcf-list .jcf-disabled {
+    background: #fff !important;
+    color: #aaa !important;
+}
+.jcf-select-drop .jcf-hover,
+.jcf-list-box .jcf-selected {
+    color: $secondary;
+    
+    &:after,
+    &:before {
+        opacity: 1;
+    }
+}
+.jcf-list .jcf-optgroup-caption {
+    white-space: nowrap;
+    font-weight: bold;
+    display: block;
+    padding: 5px 9px;
+    cursor: default;
+    color: #000;
+}
+.jcf-list .jcf-optgroup .jcf-option {
+    padding-left: 30px;
+}

@@ -1,0 +1,19 @@
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    background-image: none;
+    border-color: #D4313C;
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid {
+    background-image: none;
+    border-color: $teal;
+}
+
+.contact-form {
+    input {
+        @include placeholder {
+            font-style: italic;
+        }
+    }
+}

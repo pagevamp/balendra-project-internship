@@ -6000,6 +6000,11 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
+jcf@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/jcf/-/jcf-1.2.3.tgz#9d64dc3c3d0b628e634a96ae28dfe1056ed670dc"
+  integrity sha512-Hi3AUdlZq3loxSB7wuukjiwHWzn+Akq1vWxEed8+Bt/27z3nxBE3TevQmAyQmSA2WC1SvxAJh4KSO/VQxnAnFQ==
+
 jest-worker@^27.0.2:
   version "27.0.2"
   resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-27.0.2.tgz#4ebeb56cef48b3e7514552f80d0d80c0129f0b05"
