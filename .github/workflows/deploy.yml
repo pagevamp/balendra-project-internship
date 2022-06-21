@@ -2,7 +2,8 @@ name: Build and Deploy to gh-pages
 on:
   push:
     branches:
-      - header-footer       
+
+      - blogs 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
