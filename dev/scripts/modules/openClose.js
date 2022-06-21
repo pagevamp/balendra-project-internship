@@ -1,34 +1,26 @@
-import { node } from "webpack";
-
 export function openClose() {
     // console.log(window.innerWidth);
     if(window.innerWidth <= 1200){
         // console.log('reached here');
-        var toogleInfos = document.getElementsByClassName('toggle-info');
-        // console.log(toogleInfos);
+
+        const toogleInfos = document.querySelectorAll('.toggle-info');
+        let toggleContent = document.querySelectorAll('.toggle-list');
         
-        for(let i=0; i<toogleInfos.length; i++){
-            toogleInfos[i].addEventListener("click", function() {
-                toggleDiv(this);
-                // console.log('clicked');
-            });
-        }
-    }    
-}
+        console.log(toggleContent);
+        toogleInfos.forEach(item => {
+            item.addEventListener('click', event => {
+                //handle click
+                // console.log(event.target.nextSibling);
+                event.target.nextSibling.classList.toggle('show-element');
+                
+                
+            })
+            
+            
+        })
+=======
+       
 
 window.onresize = openClose;
-
-function toggleDiv(node) {
-    // console.log(node);
-    let toggleContent = node.getElementsByClassName('toggle-list')[0];
-    // console.log(toggleContent);
-    
-    if(toggleContent.style.display === 'block'){
-        toggleContent.style.display = 'none';
-    }
-    else{
-        toggleContent.style.display = 'block';
-    }    
-}
 
 
