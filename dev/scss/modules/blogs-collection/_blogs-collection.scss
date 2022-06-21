@@ -10,6 +10,15 @@
     }
 }
 
+.dropdown {
+    .dropdown-menu {
+        position: relative !important;
+        @include media-breakpoint-up(md){
+            position: absolute !important;
+        }
+    } 
+}
+
 article {
     a {
         &:hover {
@@ -39,6 +48,20 @@ article {
             width: 5px;
             border-radius: 50%;
             background-color: $black;
+        }
+    }
+}
+
+
+.blog-list {
+    .col-md-6 {
+        &:last-child{
+            @include media-breakpoint-up(md){
+                display: none;
+            }
+            @include media-breakpoint-up(xxl){
+                display: block;
+            }
         }
     }
 }
