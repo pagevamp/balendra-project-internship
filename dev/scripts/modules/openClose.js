@@ -18,8 +18,8 @@ export function openClose() {
             
             
         })
-=======
-       
+    }
+}
 
 window.onresize = openClose;
 
