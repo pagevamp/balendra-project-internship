@@ -9,9 +9,9 @@
         max-width: 210px;
         flex-basis: 210px; 
         
-        @include media-breakpoint-up(xl){
-            max-width: 272px; 
-            flex-basis:272px;            
+        @include media-breakpoint-up(md){
+            max-width: 194px; 
+            flex-basis:194px;            
         }
         
         @include media-breakpoint-up(xl){
@@ -46,4 +46,8 @@
         transform: none;
         overflow-y: hidden;
     }
+}
+
+.nav-active {
+    overflow: hidden;
 }

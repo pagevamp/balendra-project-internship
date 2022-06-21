@@ -8,6 +8,117 @@
         <div class="theme-wrap position-relative">            
             <main class="theme-main">
                 
+                @@include('includes/modules/section/leadspace.html', {
+                    'title':'Look deep into  nature, and then you will understand everything better.',
+                    'description': 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.',
+                    'buttonLink': 'Contatc Us',
+                    'smallCol': 'col-md-5',
+                    'bigCol': 'col-md-7',
+                    'imgLink-1': 'images/leadspace1.jpg',
+                    'imgLink-2': 'images/leadspace2.jpg',
+                    'imgLink-3': 'images/leadspace3.jpg'                    
+                }) 
+                
+                @@include('includes/modules/content-with-image/content-with-image-a01.html', {
+                    'eyebrow' : 'About  Us',
+                    'title' : 'Integer at neque ac metus fringilla dapibus et eu eros. Vivamus vitae finibus dolor. Suspendisse finibus ante in sapien fermentum, quis condimentum turpis consequat.',
+                    'buttonLink': 'Learn more',
+                    'videoTitle': ' How about Us?',
+                    'videoLink': 'images/Video.jpg'                 
+                })
+                @@include('includes/modules/content-with-image/content-with-image-a02.html', {
+                    'eyebrow' : 'things to remember',
+                    'title' : 'To People That Want To Start BLOGS But Are Affraid To Get Started',
+                    'date' : 'Nov 11, 2021',
+                    'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut porta diam. Nullam sed dolor in libero auctor gravida. Morbi eget nibh vel ligula consequat ultrices. Donec maximus dui sapien, ut ullamcorper nisi dignissim quis.',
+                    'buttonLink': 'More articles',
+                    imageLink: 'images/article1.jpg'                 
+                })
+                
+                @@include('includes/modules/section/slider.html', {
+                    'eyebrow' : 'Our Team',
+                    
+                    'sliderList': { 
+                        "list": [
+                        {
+                            'title' : 'Sally Albana - Site Engineer',
+                            'description': '“It is not so much for its beauty that the forest makes a claim upon men’s hearts, as for that subtle something, that quality of air that emanation from old trees, that so wonderfully changes and renews a weary spirit.”',
+                            'buttonLink': 'Read more',
+                            'imageLink': 'images/team-slider.jpg' 
+                        },
+                        {
+                            'title' : 'Sally Albana - Site Engineer',
+                            'description': '“It is not so much for its beauty that the forest makes a claim upon men’s hearts, as for that subtle something, that quality of air that emanation from old trees, that so wonderfully changes and renews a weary spirit.”',
+                            'buttonLink': 'Read more',
+                            'imageLink': 'images/team-slider.jpg' 
+                        },
+                        {
+                            'title' : 'Sally Albana - Site Engineer',
+                            'description': '“It is not so much for its beauty that the forest makes a claim upon men’s hearts, as for that subtle something, that quality of air that emanation from old trees, that so wonderfully changes and renews a weary spirit.”',
+                            'buttonLink': 'Read more',
+                            'imageLink': 'images/team-slider.jpg' 
+                        },
+                        {
+                            'title' : 'Sally Albana - Site Engineer',
+                            'description': '“It is not so much for its beauty that the forest makes a claim upon men’s hearts, as for that subtle something, that quality of air that emanation from old trees, that so wonderfully changes and renews a weary spirit.”',
+                            'buttonLink': 'Read more',
+                            'imageLink': 'images/team-slider.jpg' 
+                        },
+                        {
+                            'title' : 'Sally Albana - `2134Site Engineer',
+                            'description': '“It is not so much for its beauty that the forest makes a claim upon men’s hearts, as for that subtle something, that quality of air that emanation from old trees, that so wonderfully changes and renews a weary spirit.”',
+                            'buttonLink': 'Read more',
+                            'imageLink': 'images/team-slider.jpg' 
+                        }
+                        ]
+                    }
+                    
+                })
+                
+                @@include('includes/modules/content-with-image/content-with-image-a03.html', {
+                    'eyebrow' : 'Blogs',
+                    'title' : 'Proin pretium risus suscipit viverra mattis. Aliquam non nunc ligula',
+                    'buttonLink': 'Learn more',
+                    'description1': 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39t look even slightly believable.',
+                    'description2': 'If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.',
+                    'imageLink': 'images/Video.jpg'                 
+                })
+                
+                @@include('includes/modules/section/testimonial.html', {
+                    'title' : 'What Our Client Says?',
+                    'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut porta diam.',
+                    'author': 'Rani Cambell (Owner of CDG)',                    
+                    'imageLink': 'images/testimonial.jpg',
+                    'paragraph': '"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39t look even slightly believable."',
+                    'socialIcons': {
+                        "list": [
+                        {
+                            'socialNetwork': '<i class="icon-LinkedIn"></i>'
+                        },
+                        {
+                            'socialNetwork': '<i class="icon-Github"></i>'
+                        },
+                        {
+                            'socialNetwork': '<i class="icon-Twitter"></i>'
+                        },
+                        {
+                            'socialNetwork': '<i class="icon-Facebook"></i>'
+                        }
+                        ]
+                    }  
+                    
+                })
+                
+                
+                
+                @@include('includes/modules/section/promotional-banner.html', {
+                    'title' : 'Proin pretium risus suscipit viverra mattis. Aliquam non nunc ligula.',
+                    'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut porta diam.',
+                    'buttonLink': 'See Our Blogs',
+                    'bg-color': 'bg-blush'
+                } 
+                )
+                
                 @@include('includes/modules/section/leadspace-a01.html', {
                     'title' : 'Vivamus vitae finibus dolor. Suspendisse finibus ante in sapien fermentum.',
                     'description': 'Morbi pellentesque justo non magna iaculis efficitur in quis magna. Vivamus consectetur placerat iaculis. Aenean in orci et libero auctor elementum non in diam. Suspendisse vel urna luctus, tristique purus a, commodo metus. Nam commodo turpis eget magna placerat, quis molestie mauris volutpat',
@@ -23,6 +134,12 @@
                     'bgColor': 'bg-mint',                    
                     'imageLink': 'images/leadspacea02.jpg',                    
                     'card': false
+                })
+                
+                @@include('includes/modules/section/leadspace-a02.html', {
+                    'title' : 'Contact us',
+                    'description': 'Ut posuere ullamcorper euismod. Donec a justo pulvinar diam dictum lobortis vulputate non nisi. Vestibulum pellentesque eget lorem ultrices lobortis.',                    
+                    'imageLink': 'images/leadspacea03.jpg',
                 })
                 
                 @@include('includes/modules/section/blogs-collection.html', {
@@ -106,6 +223,12 @@
                         ]
                     }
                 })
+                
+                @@include('includes/modules/section/forms/forms.html', {
+                    
+                })
+                
+                
             </main>
         </div>        
         @@include('includes/scripts.html')

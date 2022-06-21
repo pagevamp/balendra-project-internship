@@ -26,6 +26,7 @@
 @import '../../node_modules/bootstrap/scss/button-group';
 @import '../../node_modules/bootstrap/scss/modal';
 @import '../../node_modules/bootstrap/scss/dropdown';
+@import '../../node_modules/bootstrap/scss/forms/validation';
 
 
 // 4. Helpers
@@ -39,6 +40,7 @@
 
 // 6.Utilities
 @import 'vendors/icons/icons.scss';
+@import 'vendors/icons/jcf-select/jcf';
 
 
 // 7. Mixins

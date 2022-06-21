@@ -2,6 +2,7 @@ export function openClose() {
     // console.log(window.innerWidth);
     if(window.innerWidth <= 1200){
         // console.log('reached here');
+
         const toogleInfos = document.querySelectorAll('.toggle-info');
         let toggleContent = document.querySelectorAll('.toggle-list');
         
@@ -17,8 +18,9 @@ export function openClose() {
             
             
         })
-    }
-}
+=======
+       
 
 window.onresize = openClose;
+
 

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('includes/head.html',{'pageTitle':'Final project-internship'})
+</head>
+<body class="w-100 overflow-x-hidden">
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">   
+            @@include('includes/header.html', {
+                'headerSkin': 'theme-header--dark'
+            })            
+            <main class="theme-main">
+                
+                @@include('includes/modules/section/leadspace-a01.html', {
+                    'title' : 'Vivamus vitae finibus dolor. Suspendisse finibus ante in sapien fermentum.',
+                    'description': 'Morbi pellentesque justo non magna iaculis efficitur in quis magna. Vivamus consectetur placerat iaculis. Aenean in orci et libero auctor elementum non in diam. Suspendisse vel urna luctus, tristique purus a, commodo metus. Nam commodo turpis eget magna placerat, quis molestie mauris volutpat',
+                    'bgColor': 'bg-mint',
+                    'buttonLink': 'Read more',
+                    'imageLink': 'images/leadspacea01.jpg',
+                    'date': 'November 11, 2021',
+                    'card': true
+                })  
+                
+                @@include('includes/modules/section/blogs-collection.html', {
+                    'eyebrow': 'More Blog Notes',
+                    'categoryTitle': 'Category: ',
+                    'icon': 'images/search.svg',
+                    'articleList': {
+                        "list": [
+                        {
+                            'articleImage':'images/blog1.jpg',
+                            'date':'June 11, 2021',
+                            'articleTitle': 'Interesting Facts I Bet You Never Knew About BLOGS'
+                        },
+                        {
+                            'articleImage':'images/blog2.jpg',
+                            'date':'June 11, 2021',
+                            'articleTitle': 'verything You Wanted to Know About BLOGS and Were Too EEmbarrassed to Ask'
+                        },
+                        {
+                            'articleImage':'images/blog3.jpg',
+                            'date':'June 11, 2021',
+                            'articleTitle': 'What Can You Do To Save Your BLOGS From Destruction By Social Media?'
+                        },
+                        {
+                            'articleImage':'images/blog4.jpg',
+                            'date':'June 11, 2021',
+                            'articleTitle': 'White Paper: Call to NASA for Low-Cost Innovation, New Talent Pipeline in Missions'
+                        },
+                        {
+                            'articleImage':'images/blog5.jpg',
+                            'date':'June 11, 2021',
+                            'articleTitle': 'Becoming Friends with a Mars Rover'
+                        },
+                        {
+                            'articleImage':'images/blog6.jpg',
+                            'date':'June 11, 2021',
+                            'articleTitle': 'Some Assembly Required: Documentation in Mars Rover Design'
+                        }                       
+                        ]
+                    },
+                    'categoryList': { 
+                        "list": [
+                        {
+                            'categoryName':'news'
+                        },
+                        {
+                            'categoryName':'travel'
+                        },
+                        {
+                            'categoryName':'BLogs'
+                        },
+                        {
+                            'categoryName':'facts'
+                        },
+                        {
+                            'categoryName':'Global'
+                        }
+                        ]
+                    }
+                })
+                
+                @@include('includes/modules/section/promotional-banner.html', {
+                    'title' : 'Proin pretium risus suscipit viverra mattis. Aliquam non nunc ligula.',
+                    'description': 'Integer at neque ac metus fringilla dapibus et eu eros.',
+                    'buttonLink': 'Contact',
+                    'bg-color': 'bg-mint'
+                } 
+                )
+            </main>
+            @@include('includes/footer.html')   
+        </div>        
+        @@include('includes/scripts.html')
+    </div>
+</body>
+</html>
