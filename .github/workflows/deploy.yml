@@ -2,7 +2,8 @@ name: Build and Deploy to gh-pages
 on:
   push:
     branches:
-      - contactpage     
+      - contactpage
+      
       jobs:
         build-and-deploy:
           runs-on: ubuntu-latest
