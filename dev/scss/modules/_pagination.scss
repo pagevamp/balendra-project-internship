@@ -1,0 +1,12 @@
+.pagination {
+    .active {
+        text-decoration: underline;
+        cursor: none;
+        pointer-events: none;
+    }
+    .prev,
+    .next {
+        height: 4rem;
+        width: 4rem;
+    }
+}

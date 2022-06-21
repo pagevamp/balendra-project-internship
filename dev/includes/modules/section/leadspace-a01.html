@@ -1,0 +1,31 @@
+<section class="leadspace-a01 @@bgColor py-6 py-xxl-20">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-xxl-8">
+                <figure class="ratio ratio-327x245">
+                    <img src="@@imageLink" alt="">
+                </figure>
+            </div>
+        </div>
+        <div class="row justify-content-md-end">
+            <div class="col-md-8">
+                <div class="bg-secondary text-white border-top border-8 border-primary position-relative lh-114 p-6 p-lg-10 mt-n30">
+                    <h1 class="h2 mb-0">
+                        @@title
+                    </h1>  
+                </div>                    
+            </div>
+        </div>
+        <div class="row justify-content-xxl-center">
+            <div class="col-xxl-10">
+                @@if (card === true) {            
+                    @@include('../cards/card-a01.html',{
+                        'date': '@@date',
+                        'description': '@@description',
+                        'buttonLink': '@@buttonLink'
+                    })
+                }
+            </div>
+        </div>
+    </div>
+</section>

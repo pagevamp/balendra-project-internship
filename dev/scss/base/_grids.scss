@@ -51,19 +51,10 @@ $grid-gutter-width:map-get($grid-gutter-width,xl);
     .row {
         margin-left: -2rem;
         margin-right: -2rem;
-        
-        @include media-breakpoint-up(xxl){
-            margin-left: -4rem;
-            margin-right: -4rem;
-        }
     }
     
     .col, [class*="col-"] {
         padding: 0 2rem;
-        
-        @include media-breakpoint-up(xxl){
-            padding: 0 4rem; 
-        }
     }
 }
 

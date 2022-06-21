@@ -1,7 +1,7 @@
 import { node } from "webpack";
 
 export function openClose() {
-    console.log(window.innerWidth);
+    // console.log(window.innerWidth);
     if(window.innerWidth <= 1200){
         console.log('reached here');
         var toogleInfos = document.getElementsByClassName('toggle-info');
@@ -17,7 +17,7 @@ export function openClose() {
 }
 
 function toggleDiv(node) {
-    console.log(node);
+    // console.log(node);
     let toggleContent = node.getElementsByClassName('toggle-list')[0];
     console.log(toggleContent);
     

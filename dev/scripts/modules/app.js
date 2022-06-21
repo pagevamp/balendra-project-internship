@@ -4,6 +4,7 @@ import 'bootstrap/js/dist/modal';
 import { swiper } from './slider';
 import { openClose } from './openClose';
 import { burgerMenu } from './burger-menu';
+import Dropdown from 'bootstrap/js/dist/dropdown'
 // import 'bootstrap/js/dist/dropdown';
 // import 'bootstrap/js/dist/modal';
 // import 'bootstrap/js/dist/tab';
