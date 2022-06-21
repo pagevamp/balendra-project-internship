@@ -1,1 +1,1 @@
-(()=>{"use strict";window.onresize=function(){if(window.innerWidth<=1200){const e=document.querySelectorAll(".toggle-info");let t=document.querySelectorAll(".toggle-list");console.log(t),e.forEach((e=>{e.addEventListener("click",(e=>{e.target.nextSibling.classList.toggle("show-element")}))}))}}})();
+(()=>{"use strict";window.addEventListener("resize",(function(){window.innerWidth<=1200&&document.querySelectorAll(".opener").forEach((e=>{e.addEventListener("click",(e=>{e.target.nextSibling.classList.toggle("show-element")}))}))}))})();

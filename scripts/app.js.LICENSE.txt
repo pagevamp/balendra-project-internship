@@ -39,3 +39,46 @@
   * Copyright 2011-2021 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
+
+/*!
+ * JavaScript Custom Forms
+ *
+ * Copyright 2014-2015 PSD2HTML - http://psd2html.com/jcf
+ * Released under the MIT license (LICENSE.txt)
+ *
+ * Version: 1.2.3
+ */
+
+/*!
+ * JavaScript Custom Forms : Select Module
+ *
+ * Copyright 2014-2015 PSD2HTML - http://psd2html.com/jcf
+ * Released under the MIT license (LICENSE.txt)
+ *
+ * Version: 1.2.3
+ */
+
+/*!
+ * Sizzle CSS Selector Engine v2.3.6
+ * https://sizzlejs.com/
+ *
+ * Copyright JS Foundation and other contributors
+ * Released under the MIT license
+ * https://js.foundation/
+ *
+ * Date: 2021-02-16
+ */
+
+/*!
+ * jQuery JavaScript Library v3.6.0
+ * https://jquery.com/
+ *
+ * Includes Sizzle.js
+ * https://sizzlejs.com/
+ *
+ * Copyright OpenJS Foundation and other contributors
+ * Released under the MIT license
+ * https://jquery.org/license
+ *
+ * Date: 2021-03-02T17:08Z
+ */
