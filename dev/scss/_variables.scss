@@ -51,7 +51,6 @@ $mint:    #F4FEF3 !default;
 $peach:   #F5CEBE !default;
 $blush:   #F4EEE8 !default;
 $moon:    #EAEFED !default;
-$chambray:#325288 !default;
 
 // scss-docs-end color-variables
 
@@ -71,7 +70,6 @@ $colors: (
 "gray":       $gray-600,
 "gray-dark":  $gray-800,
 "black":      $black
-// "chambray":   $chambray
 ) !default;
 // scss-docs-end colors-map
 
@@ -89,7 +87,6 @@ $mint:          $mint;
 $peach:         $peach;
 $blush:         $blush;
 $moon:          $moon;
-$chambray:      $chambray;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -106,8 +103,7 @@ $theme-colors: (
 "mint":       $mint,
 "peach":      $peach,
 "blush":      $blush,
-"moon":       $moon,
-"chambray":   $chambray
+"moon":       $moon
 
 ) !default;
 // scss-docs-end theme-colors-map
@@ -516,9 +512,9 @@ $grid-breakpoints: (
 xs: 0,
 sm: 576px,
 md: 768px,
-lg: 1024px,
+lg: 1100px,
 xl: 1200px,
-xxl: 1400px
+xxl: 1441px
 ) !default;
 // scss-docs-end grid-breakpoints
 
@@ -532,7 +528,8 @@ xxl: 1400px
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
-xxl: 1360px
+xl: 1360px,
+xxl: 1400px
 ) !default;
 // scss-docs-end container-max-widths
 

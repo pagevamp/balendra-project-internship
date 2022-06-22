@@ -364,53 +364,27 @@ ul {
     }
 }
 
-.ratio-327x233 {
-    @include media-breakpoint-up(md){
-        --bs-aspect-ratio: 53.8%;
-    }
-    
-    @include media-breakpoint-up(xxl){
-        --bs-aspect-ratio: 54.4%;
-    }
-}
 
-.ratio-279x238 {
-    @include media-breakpoint-up(md){
-        --bs-aspect-ratio: 68.4%;
-    }
-    
-    @include media-breakpoint-up(xxl){
-        --bs-aspect-ratio: 59.8%;
-    }
-}
 
 .ratio-319x268 {
     @include media-breakpoint-up(md){
         --bs-aspect-ratio: 70%;
     }
     
-    @include media-breakpoint-up(xxl){
+    @include media-breakpoint-up(lg){
         --bs-aspect-ratio: 78%;
     }
 }
 
-.ratio-327x281 {
-    @include media-breakpoint-up(md){
-        --bs-aspect-ratio: 130%;
-    }
-    
-    @include media-breakpoint-up(xxl){
-        --bs-aspect-ratio: 107.3%;
-    }
-}
+
 
 .ratio-327x334 {
     @include media-breakpoint-up(md){
-        --bs-aspect-ratio:109%;
+        --bs-aspect-ratio:108.41%;
     }
     
-    @include media-breakpoint-up(xxl){
-        --bs-aspect-ratio: 70.7%;
+    @include media-breakpoint-up(lg){
+        --bs-aspect-ratio: 85.89%;
     }
 }
 
@@ -419,7 +393,7 @@ ul {
         --bs-aspect-ratio:56.17%;        
     } 
     
-    @include media-breakpoint-up(xxl){
+    @include media-breakpoint-up(lg){
         --bs-aspect-ratio:56.4%;        
     }
 }
@@ -428,8 +402,6 @@ ul {
     @include media-breakpoint-up(md){  
         --bs-aspect-ratio:47%; 
     } 
-    
-    
 }
 
 .fs-14 {
@@ -453,49 +425,12 @@ ul {
     font-size: 1.6rem;
 }
 
-
-
-.fs-sm-md {
-    font-size: 1.8rem;
-    
-    @include media-breakpoint-up(md){
-        font-size: 1.6rem;
-    }
-    
-    @include media-breakpoint-up(xxl){
-        font-size: 1.8rem;
-    }    
-}
-
-
-
-
-.fs-18-h3 {
-    font-size: 1.8rem;
-    
-    @include media-breakpoint-up(xl){
-        font-size: 3.5rem;
-    }
-}
-
-.fs-23 {
-    font-size: 2.3rem;
-    line-height: 1.4;
-    @include media-breakpoint-up(xl){
-        font-size: 2.8rem;
-    }
-}
-
 .fs-28 {
     font-size: 2.8rem;
 }
 
-.fs-20-23 {
-    font-size: 2rem;
-    
-    @include media-breakpoint-up(xxl){
-        font-size: 2.3rem;
-    }
+.fs-24 {
+    font-size: 2.4rem;
 }
 
 .ls-2 {
@@ -512,21 +447,6 @@ ul {
 
 .font-italic {
     font-style: italic;
-}
-
-.fs-18-23 {
-    font-size: 1.8rem;
-    @include media-breakpoint-up(xxl){
-        font-size: 2.3rem;
-    }
-    
-}
-.fs-16-18 {
-    font-size: 1.6rem;
-    
-    @include media-breakpoint-up(xxl){
-        font-size: 1.8rem;
-    }    
 }
 
 .text-hover-peach {
@@ -547,4 +467,8 @@ ul {
     @include media-breakpoint-up(md){
         max-width: 400px;
     }
+}
+
+.object-cover {
+    object-fit: cover;
 }

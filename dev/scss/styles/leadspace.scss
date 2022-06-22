@@ -1,2 +1,11 @@
 @import '../common-imports';
 
+.ratio-327x233 {
+    @include media-breakpoint-up(md){
+        --bs-aspect-ratio: 53.8%;
+    }
+    
+    @include media-breakpoint-up(lg){
+        --bs-aspect-ratio: 54.39%;
+    }
+}

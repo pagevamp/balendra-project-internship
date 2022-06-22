@@ -1,9 +1,9 @@
 export function openClose() {
     // console.log(window.innerWidth);
-    if(window.innerWidth <= 1200){
+    if(window.innerWidth <= 1100){
         // console.log('reached here');
         const opener = document.querySelectorAll('.opener');
-       
+        
         // console.log(toggleContent);
         opener.forEach(item => {
             item.addEventListener('click', event => {

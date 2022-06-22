@@ -8,7 +8,7 @@
     .logo {
         width: 155px;
         
-        @include media-breakpoint-up(xxl){
+        @include media-breakpoint-up(lg){
             width: 274px;
         }
     }
@@ -22,12 +22,11 @@
 }
 
 
-.toggle-info{
-    .toggle-list{
-        display: none;
-        @include media-breakpoint-up(xl){
-            display: block;
-        }
+
+.toggle-list{
+    display: none;
+    @include media-breakpoint-up(lg){
+        display: block;
     }
 }
 
