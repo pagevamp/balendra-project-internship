@@ -1,1 +1,1 @@
-(()=>{"use strict";window.addEventListener("resize",(function(){window.innerWidth<=1200&&document.querySelectorAll(".opener").forEach((e=>{e.addEventListener("click",(e=>{e.target.nextSibling.classList.toggle("show-element")}))}))}))})();
+(()=>{"use strict";window.addEventListener("resize",(function(){window.innerWidth<=1100&&document.querySelectorAll(".opener").forEach((e=>{e.addEventListener("click",(e=>{e.target.nextSibling.classList.toggle("show-element")}))}))}))})();
