@@ -1,6 +1,6 @@
-<section class="bg-mint pb-6 pb-lg-10 pb-xxl-20">
+<section class="bg-mint pb-6 pb-md-10 pb-lg-30">
     <div class="container">
-        <div class="bg-white moon-shadow p-6 p-lg-10 p-xxl-20">
+        <div class="bg-white moon-shadow p-6 p-md-10 p-lg-20">
             <form action="#" class="contact-form needs-validation" novalidate>
                 <div class="row mb-11">
                     <div class="col-md-6 width">
@@ -14,19 +14,19 @@
                 </div>
                 <div class="row">
                     <div class="width col-md-6 mb-6 mb-lg-10">
-                        <label for="firstname" class="text-primary body-sm fw-bold">First name</label>
+                        <label for="firstname" class="d-block mb-2 text-primary body-sm fw-bold">First name</label>
                         <input type="text" placeholder="Jane" id="firstname" class="form-control lh-114 fs-23" required>
                     </div>
                     <div class="width col-md-6 mb-6 mb-lg-10">
-                        <label for="lastname" class="text-primary body-sm fw-bold">Last name</label>
+                        <label for="lastname" class="d-block mb-2 text-primary body-sm fw-bold">Last name</label>
                         <input type="text" placeholder="Doe" id="lastname" class="form-control  lh-114 fs-23" required>
                     </div>
                     <div class="col-12 mb-6 mb-lg-10">
-                        <label for="email" class="text-primary body-sm fw-bold">Email address</label>
+                        <label for="email" class="d-block mb-2 text-primary body-sm fw-bold">Email address</label>
                         <input type="email" placeholder="jane@domain.com" id="email" class="form-control lh-114 fs-23" required>
                     </div>
                     <div class="col-12 mb-6 mb-lg-10">
-                        <label for="message" class="text-primary body-sm fw-bold">Message</label>
+                        <label for="message" class="d-block mb-2 text-primary body-sm fw-bold">Message</label>
                         <input type="text" placeholder="How can we help?" class="form-control lh-114 fs-23" id="message" required>
                     </div>
                     <div class="col fs-14 mb-6 mb-lg-10">
@@ -54,10 +54,10 @@ crossorigin="anonymous"></script>
     });
     
     function initCustomForms() {
-	jcf.setOptions('Select', {
-		wrapNative: false,
-		wrapNativeOnMobile: false,
-	});
-	jcf.replaceAll();
-}
+        jcf.setOptions('Select', {
+            wrapNative: false,
+            wrapNativeOnMobile: false,
+        });
+        jcf.replaceAll();
+    }
 </script>

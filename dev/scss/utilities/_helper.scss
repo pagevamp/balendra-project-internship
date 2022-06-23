@@ -387,14 +387,13 @@ ul {
 }
 
 
-
 .ratio-319x268 {
     @include media-breakpoint-up(md){
-        --bs-aspect-ratio: 70%;
+        --bs-aspect-ratio: 73%;
     }
     
     @include media-breakpoint-up(lg){
-        --bs-aspect-ratio: 78%;
+        --bs-aspect-ratio: 75%;
     }
 }
 
@@ -455,6 +454,10 @@ ul {
     font-size: 2.4rem;
 }
 
+.ls-0 {
+    letter-spacing: 0 !important;
+}
+
 .ls-2 {
     letter-spacing: -0.02em;
 }
@@ -501,4 +504,16 @@ ul {
 
 .ratio>* {
     object-fit: cover;
+}
+
+.font-arial {
+    font-family: 'Arial', serif;
+}
+
+.fs-20-28 {
+    font-size: 2rem;
+    
+    @include media-breakpoint-up(lg){  
+        font-size: 2.8rem;
+    } 
 }
