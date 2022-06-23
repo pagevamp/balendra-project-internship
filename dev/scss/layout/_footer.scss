@@ -4,14 +4,7 @@
     }
 }
 
-.theme-footer {
-    .logo {
-        width: 155px;
-        
-        @include media-breakpoint-up(xxl){
-            width: 274px;
-        }
-    }
+.theme-footer {    
     form {
         input {
             @include placeholder {
@@ -22,12 +15,11 @@
 }
 
 
-.toggle-info{
-    .toggle-list{
-        display: none;
-        @include media-breakpoint-up(xl){
-            display: block;
-        }
+
+.toggle-list{
+    display: none;
+    @include media-breakpoint-up(lg){
+        display: block;
     }
 }
 

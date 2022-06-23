@@ -2,20 +2,23 @@
     
     &__icon {
         height: 68px;
-        width: 68px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        width: 68px;        
         z-index: 1;
+        font-size: 3rem;
         cursor: pointer;
         
         &:hover {
             opacity: 0.8;
         }
+    }       
+}
+
+.ratio-279x238 {
+    @include media-breakpoint-up(md){
+        --bs-aspect-ratio: 68.32%;
     }
     
-    &__video-title {
-        line-height: 1.222;
-        letter-spacing: 0.1em;        
+    @include media-breakpoint-up(lg){
+        --bs-aspect-ratio: 59.75%;
     }
 }

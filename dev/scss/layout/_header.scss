@@ -6,15 +6,10 @@
 
 .theme-header {
     .logo {
-        max-width: 210px;
-        flex-basis: 210px; 
+        max-width: 246px; 
+        flex-basis:246px;
         
-        @include media-breakpoint-up(md){
-            max-width: 194px; 
-            flex-basis:194px;            
-        }
-        
-        @include media-breakpoint-up(xl){
+        @include media-breakpoint-up(lg){
             max-width: 350px; 
             flex-basis:350px;            
         }
@@ -39,7 +34,7 @@
         
     }
     
-    @include media-breakpoint-up(xl){
+    @include media-breakpoint-up(lg){
         position: static;
         background: $white;
         color: $primary;
