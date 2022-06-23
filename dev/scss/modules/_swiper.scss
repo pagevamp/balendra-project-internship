@@ -50,8 +50,14 @@
     }
 }
 
-.slider__details {    
-    @include media-breakpoint-up(lg){
-        max-width: 1200px;
+.slider{
+    &__details {    
+        @include media-breakpoint-up(lg){
+            max-width: 1200px;
+        }
+    }
+    
+    &__nav {
+        z-index: 1;
     }
 }

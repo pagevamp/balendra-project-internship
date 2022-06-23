@@ -39,8 +39,7 @@ $grid-gutter-width:map-get($grid-gutter-width,xl);
 
 */
 
-.container,
-.container-fluid {
+.container {
     padding: 0 2.4rem;
     
     @include media-breakpoint-up(md){

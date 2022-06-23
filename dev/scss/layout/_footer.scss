@@ -4,14 +4,7 @@
     }
 }
 
-.theme-footer {
-    .logo {
-        width: 155px;
-        
-        @include media-breakpoint-up(lg){
-            width: 274px;
-        }
-    }
+.theme-footer {    
     form {
         input {
             @include placeholder {

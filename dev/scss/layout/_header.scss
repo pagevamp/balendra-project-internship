@@ -34,7 +34,7 @@
         
     }
     
-    @include media-breakpoint-up(xl){
+    @include media-breakpoint-up(lg){
         position: static;
         background: $white;
         color: $primary;
