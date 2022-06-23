@@ -335,32 +335,54 @@ ul {
 }
 
 .btn-primary {
-    &:hover {
-        background-color: $white;
-        color: $space;
+    &:hover ,
+    &:focus {
+        background-color: $white !important;
+        color: $space !important;
+    }
+    
+    &:disabled {
+        background-color: $blush !important;
     }
 }
 
 .btn-secondary {
-    &:hover {
-        background-color: $white;
-        color: $space;
+    &:hover,
+    &:focus {
+        background-color: $white !important;
+        color: $space !important;
+    }
+    
+    &:disabled {
+        background-color: $blush !important;
     }
 }
 
 .btn-outline-primary {
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: transparent !important;
         border-color: $teal !important;
         color: $teal !important;
     }
+    
+    &:disabled {
+        border-color: $blush !important;
+        color: $blush !important; 
+    }
 }
 
 .btn-outline-secondary {
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: transparent !important;
         border-color: $teal !important;
         color: $teal !important;
+    }
+    
+    &:disabled {
+        border-color: $blush !important;
+        color: $blush !important; 
     }
 }
 
@@ -470,5 +492,13 @@ ul {
 }
 
 .object-cover {
+    object-fit: cover;
+}
+
+.border-solid {
+    border-style: solid;
+}
+
+.ratio>* {
     object-fit: cover;
 }

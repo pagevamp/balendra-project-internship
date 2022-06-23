@@ -52,6 +52,7 @@ $grid-gutter-width:map-get($grid-gutter-width,xl);
     
     @include media-breakpoint-up(xxl){
         padding: 0 12rem;
+        max-width: 100%;
     } 
     
     
