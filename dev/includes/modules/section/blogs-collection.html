@@ -4,18 +4,18 @@
             @@eyebrow
         </div>
         <div class="d-md-flex mb-8 mb-md-18">
-            <span class="articles__category-title d-block d-md-inline-block body-sm mb-5 mb-md-0">@@categoryTitle</span> 
-            <ul class="articles__category-list fz-18 fw-semi-bold d-flex flex-wrap align-items-center text-uppercase ls-1 mb-0 ps-0">
+            <span class="articles__category-title d-block d-md-inline-block body-sm mb-5 mb-md-2">@@categoryTitle</span> 
+            <ul class="articles__category-list h6  d-flex flex-wrap align-items-center text-uppercase ls-1 mb-0 ps-0">
                 @@for (var i=0; i < categoryList.list.length; i++) {
                     @@include('../category-list/category-list.html',`+(JSON.stringify(categoryList.list[i]))+`)
                 }
             </ul>
         </div>
-        <div class="row justify-content-between mb-10 mb-md-20">
+        <div class="row justify-content-between align-items-md-center mb-10 mb-md-20">
             <div class="col-md-7 col-xxl-5">
                 <form action="#" class="blog-search">
                     <div class="form-element position-relative">
-                        <input type="search" class="rounded-pill w-100 border-chambray border-2 py-2 py-md-5 pe-11 ps-2">
+                        <input type="search" class="rounded-pill w-100 border-solid border-secondary border-2 py-2 py-md-4 pe-11 ps-2">
                         <button type="submit" class="search-btn position-absolute border-0 bg-transparent top-50 translate-middle-y p-0">
                             <img src="@@icon" alt="">
                         </button>
@@ -24,10 +24,10 @@
             </div>
             <div class="col-md-5 ">
                 <div class="dropdown d-flex justify-content-center flex-column flex-md-row justify-content-md-end mt-10 mt-md-0">
-                    <button class=" btn dropdown-toggle text-uppercase p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="text-black btn h6 dropdown-toggle text-uppercase p-0 mb-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         latest
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-end text-uppercase bg-mint text-black fw-semi-bold body-sm border  border-peach py-0 px-4 mb-10" aria-labelledby="dropdownMenuButton1">
+                    <ul class="dropdown-menu dropdown-menu-end text-uppercase bg-mint text-black fw-semi-bold body-sm border border-peach py-0 px-4 mb-10 mb-md-0" aria-labelledby="dropdownMenuButton1">
                         <li class="border-bottom border-black ps-0 mb-0"><a class="dropdown-item" href="#">Alphabetical order</a></li>
                         <li class="border-bottom border-black ps-0 mb-0"><a class="dropdown-item" href="#">Featured</a></li>
                         <li class="border-bottom border-black ps-0 mb-0"><a class="dropdown-item" href="#">Latest</a></li>

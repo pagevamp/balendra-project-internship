@@ -31,7 +31,7 @@ article {
         @include media-breakpoint-up(md){
             --bs-aspect-ratio:66.4%; 
         }
-        @include media-breakpoint-up(xxl){
+        @include media-breakpoint-up(lg){
             --bs-aspect-ratio:75%; 
         }
     }

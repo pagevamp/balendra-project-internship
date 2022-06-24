@@ -5,15 +5,12 @@
     position: relative;
     border: 2px solid $primary;
     background: #fff;
-    min-width: 150px;
+    min-width: 15rem;
     width: 100%;
     line-height: 1.1428;
     font-size: 2.3rem;
-    padding: 1.2rem 1.2rem;
-    
-    @include media-breakpoint-up(lg) {
-        font-size: 2.8rem;        
-    }
+    padding: 1.6rem;
+    font-weight: 700;
 }
 .jcf-select select {
     z-index: 1;
@@ -21,17 +18,14 @@
     top: 0;
 }
 .jcf-select .jcf-select-text {
-    text-overflow:ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
     cursor: default;
     display: block;
-    margin: 0 35px 0 8px;
+    margin: 0 3.55rem 0 0.8rem;
 }
 .jcf-select .jcf-select-opener {
     position: absolute;
     text-align: center;
-    width: 50px;
+    width: 5rem;
     bottom: 0;
     right: 0;
     top: 0;
@@ -39,12 +33,16 @@
     &::after {
         position: absolute;
         content: '\e904';
-        right: 2.2rem;
+        right: 1.6rem;
         font-family: 'Icons';
         color:$black;
         top: 50%;
         transform: translateY(-50%);
         font-size: 1.8rem;
+        
+        @include media-breakpoint-up(md) {
+            right: 2.2rem;     
+        }
     }
 }
 body > .jcf-select-drop {
@@ -68,7 +66,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
     top: auto;
 }
 .jcf-select.jcf-compact-multiple {
-    max-width: 220px;
+    max-width: 22rem;
 }
 .jcf-select.jcf-compact-multiple .jcf-select-opener:before {
     display: inline-block;
@@ -105,8 +103,8 @@ body > .jcf-select-drop.jcf-drop-flipped {
     overflow: hidden;
     display: inline-block;
     border: 1px solid #b8c3c9;
-    min-width: 200px;
-    margin: 0 15px;
+    min-width: 20rem;
+    margin: 0 1.5rem;
 }
 /* select options styles */
 .jcf-list {
@@ -194,10 +192,10 @@ body > .jcf-select-drop.jcf-drop-flipped {
     white-space: nowrap;
     font-weight: bold;
     display: block;
-    padding: 5px 9px;
+    padding: 0.5rem 0.9rem;
     cursor: default;
     color: #000;
 }
 .jcf-list .jcf-optgroup .jcf-option {
-    padding-left: 30px;
+    padding-left: 3rem;
 }
