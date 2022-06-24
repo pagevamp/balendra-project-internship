@@ -892,7 +892,7 @@ $input-line-height:                     $input-btn-line-height !default;
 
 $input-padding-y-sm:                    1.2rem !default;
 $input-padding-x-sm:                    1.2rem !default;
-$input-font-size-sm:                    $input-btn-font-size-sm !default;
+$input-font-size-sm:                    2.3rem !default;
 
 $input-padding-y-lg:                    1.6rem !default;
 $input-padding-x-lg:                    1.6rem !default;
@@ -1207,7 +1207,7 @@ $dropdown-font-size:                $font-size-base !default;
 $dropdown-color:                    $body-color !default;
 $dropdown-bg:                       $white !default;
 $dropdown-border-color:             rgba($black, .15) !default;
-$dropdown-border-radius:            $border-radius !default;
+$dropdown-border-radius:            0 !default;
 $dropdown-border-width:             $border-width !default;
 $dropdown-inner-border-radius:      subtract($dropdown-border-radius, $dropdown-border-width) !default;
 $dropdown-divider-bg:               $dropdown-border-color !default;

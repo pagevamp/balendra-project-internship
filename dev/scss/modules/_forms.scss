@@ -12,6 +12,15 @@
 
 .contact-form {
     input {
+        font-size: 2.3rem;
+        line-height: 1.14;
+        @include media-breakpoint-up(md) {
+            padding: 1.6rem; 
+        }
+        
+        @include media-breakpoint-up(lg) {
+            font-size: 2.8rem;            
+        }
         @include placeholder {
             font-style: italic;
         }
