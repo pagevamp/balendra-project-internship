@@ -59,7 +59,7 @@ article {
             @include media-breakpoint-up(md){
                 display: none;
             }
-            @include media-breakpoint-up(xxl){
+            @include media-breakpoint-up(lg){
                 display: block;
             }
         }
