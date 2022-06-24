@@ -335,44 +335,65 @@ ul {
 }
 
 .btn-primary {
-    &:hover {
-        background-color: $white;
-        color: $space;
+    &:hover ,
+    &:focus {
+        background-color: $white !important;
+        color: $space !important;
+    }
+    
+    &:disabled {
+        background-color: $blush !important;
     }
 }
 
 .btn-secondary {
-    &:hover {
-        background-color: $white;
-        color: $space;
+    &:hover,
+    &:focus {
+        background-color: $white !important;
+        color: $space !important;
+    }
+    
+    &:disabled {
+        background-color: $blush !important;
     }
 }
 
 .btn-outline-primary {
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: transparent !important;
         border-color: $teal !important;
         color: $teal !important;
+    }
+    
+    &:disabled {
+        border-color: $blush !important;
+        color: $blush !important; 
     }
 }
 
 .btn-outline-secondary {
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: transparent !important;
         border-color: $teal !important;
         color: $teal !important;
     }
+    
+    &:disabled {
+        border-color: $blush !important;
+        color: $blush !important; 
+    }
 }
-
 
 
 .ratio-319x268 {
     @include media-breakpoint-up(md){
-        --bs-aspect-ratio: 70%;
+        --bs-aspect-ratio: 73%;
     }
     
     @include media-breakpoint-up(lg){
-        --bs-aspect-ratio: 78%;
+        --bs-aspect-ratio: 75%;
     }
 }
 
@@ -433,6 +454,10 @@ ul {
     font-size: 2.4rem;
 }
 
+.ls-0 {
+    letter-spacing: 0 !important;
+}
+
 .ls-2 {
     letter-spacing: -0.02em;
 }
@@ -471,4 +496,24 @@ ul {
 
 .object-cover {
     object-fit: cover;
+}
+
+.border-solid {
+    border-style: solid;
+}
+
+.ratio>* {
+    object-fit: cover;
+}
+
+.font-arial {
+    font-family: 'Arial', serif;
+}
+
+.fs-20-28 {
+    font-size: 2rem;
+    
+    @include media-breakpoint-up(lg){  
+        font-size: 2.8rem;
+    } 
 }
